@@ -73,6 +73,8 @@ function App() {
   }
 
   const addTodatabase = async(user) => {
+    //turn into mongo text to be stored as mongo
+    
     console.log(user);
     await adddatabase(user);
     fetchdatabase();
@@ -98,9 +100,9 @@ function App() {
               id="username"
               name="username"
               placeholder="Username"
-              onChange={e => createuser(this.user ={username: [document.getElementById('form-input')]})}
+              onChange={e => createuser(this.user ={username: })}
           />
-          <button onClick={e => addTodatabase(this.user.username ={username: [document.getElementById('form-input')]})}>Add to Database</button>
+          <button onClick={e => addTodatabase(this.user = {username: [document.getElementById('form-input')]})}>Add to Database</button>
           <button>Test</button>
           </form>
       {users.map( user => (
@@ -122,7 +124,7 @@ function App() {
       ))}  
    
       
-        <p>https://github.com/BYU-CS-260/grocery-store-termedcashew/</p>
+        <p>https://github.com/termedcashew/1119create</p>
     </div>
   );
 }
